@@ -17,7 +17,7 @@ end;
 
 procedure buscardato(v:vec);
 
-    procedure busquedadicotomica(v: vector; ini,fin: indice; dato:integer; var pos: integer); 
+    procedure busquedadicotomica(v: vec; ini,fin: indice; dato:integer; var pos: integer); 
     var
         medio: indice;
     begin
@@ -34,7 +34,7 @@ procedure buscardato(v:vec);
                     busquedadicotomica(v,ini,medio-1,dato,pos);
                 end
                 else begin
-                    busquedadicotomica(v.medio+1,fin,dato,pos);
+                    busquedadicotomica(v,medio+1,fin,dato,pos);
                 end;
             end;
         end;
