@@ -279,9 +279,9 @@ procedure InformarCantidadSociosEnRango (a: arbol);
                  cantentremedio := cantentremedio(a^.HI, max,min)  + cantentremedio(a^.HD,max,min) + 1 
             end
             else begin
-                if (a^.dato.numero < min) then
+                if (a^.dato.numero <= min) then
                      cantentremedio := cantentremedio (a^.HD,max,min)
-                else if (a^.dato.numero > max) then
+                else if (a^.dato.numero >= max) then
                      cantentremedio:= cantentremedio(a^.HI,max,min);
             end;
         end;
