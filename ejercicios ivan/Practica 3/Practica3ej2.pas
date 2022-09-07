@@ -67,7 +67,7 @@ nombre y edad. La lectura finaliza con el numero de socio 0 y el arbol debe qued
 			 end
 		else if (cod< a2^.dato.codigo) then 
 				InsertarElemento2(a2^.HI, cod, vendidas)
-			 else if (cod< a^.dato.codigo) then
+			 else if (cod> a^.dato.codigo) then
 					 InsertarElemento2(a2^.HD, cod, vendidas)
 				  else 
 					 a2^.dato.totalvendidos := a2^.dato.totalvendidos + vendidas;
