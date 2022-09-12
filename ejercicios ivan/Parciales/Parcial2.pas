@@ -139,6 +139,20 @@ begin
     end;
 end;
 
+{var
+    asis: asistencia;
+    dniact: integer;
+    i:integer;
+begin
+    for i:=1 to dimf do begin
+		while (v[i] <>nil) do begin
+			insertarenarbol(a,v[i]^.dato.dni,v[i]^.dato.codigo,v[i]^.dato.minutos);
+			v[i]:= v[i]^.sig;
+		end;
+	end;
+end;
+}
+
 procedure incisob (a:arbol; var ln:listanueva);
 
     procedure agregarAtras( var l,ult: listanueva; dni,minutos: integer);
