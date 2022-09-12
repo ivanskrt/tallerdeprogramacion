@@ -122,6 +122,7 @@ var
 	diml: integer;
 begin
 	cargarvec(v,diml);
+	ordernarporsel(v,diml);
 	buscarelemento(v,diml);
 	totalexp(v,diml);
 end.
